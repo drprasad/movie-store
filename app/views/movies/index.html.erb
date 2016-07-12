@@ -1,0 +1,37 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-9">
+			<div class="row">
+				<% @movies.each do |movie| %>
+					<div class="col-md-4 col-sm-4 col-lg-4">
+						<div class="product-container">
+							<div class="poster">
+								<%= link_to(image_tag(movie.poster, alt: "#{movie.title}"), "#") %>
+							</div>
+							<div class="caption">
+								<div class="movie-title">
+									<h5>
+										<%= link_to("#{movie.title} (#{movie.release_year})", "#") %>
+									</h5>
+								</div>
+								<p class="stars-gold">
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+								</p>
+									<p class="pull-right price">$ <%= movie.price %></p>
+									<p>
+										<%= link_to movie.imdb do %>
+											<%= image_tag asset_path("imdb_logo.png") %>
+										<% end %>
+									</p>
+							</div>
+						</div>
+					</div>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</div>

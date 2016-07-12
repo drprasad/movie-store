@@ -1,0 +1,53 @@
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background-image: url('/assets/body_bg.png');
+}
+
+
+.product-container {
+    background-color:rgb(25,28,59);
+    margin: 20px auto;
+    width: 200px;
+    
+}
+
+.poster {
+    background-color: #AAAAAA;
+    width: 200px;
+    height: 293px;
+}
+
+.poster > a > img {
+    width: 100%;
+    height: 100%;
+}
+
+.caption {
+    padding: 0px 10px 1px 10px;
+}
+
+.caption > .movie-title > h5 > a {
+        color: #EEEEEE;
+        font-weight: bold;
+}
+
+.movie-title {
+    height: 40px;
+    overflow: hidden;
+}
+
+.price {
+    background-color: rgb(50, 50, 75);
+    color: rgb(230, 200, 80);
+    display: block;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin-top: -2px;
+}
+
+.stars-gold {
+    color: rgb(230, 200, 80);
+    padding-top: 10px;
+}
