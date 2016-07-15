@@ -16,6 +16,7 @@ body {
     background-color: #AAAAAA;
     width: 200px;
     height: 293px;
+    margin: 0px auto;                       /* For show page */
 }
 
 .poster > a > img {
@@ -45,6 +46,37 @@ body {
     padding: 2px 6px;
     border-radius: 3px;
     margin-top: -2px;
+}
+
+.details {
+    color: #FFFFFF;
+
+    h3 {
+        margin-top: 0px !important;
+        font-weight: bold;
+    }
+
+    p strong {
+        color: rgb(177, 122, 32);
+    }
+}
+
+.price-lg {
+    display: inline-block;
+    background-color: rgb(50, 50, 75);
+    font-size: 20px;
+    color: rgb(230, 200, 80);
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+.cart-button {
+    display: inline-block;
+    background-color: rgb(177, 122, 32);
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 10px 20px;
 }
 
 .stars-gold {

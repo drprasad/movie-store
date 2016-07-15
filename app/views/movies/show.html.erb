@@ -1,0 +1,20 @@
+<div class="container">
+	<div class="row col-lg-3 col-md-3 col-sm-4">
+		<div class="poster">
+			<%= link_to image_tag(@movie.poster, alt: "#{ @movie.title }"), "#" %>
+		</div>
+	</div>
+	<div class="col-lg-6 col-md-7 col-sm-8 details">
+		<h3><%= @movie.title %> (<%= @movie.release_year %>)</h3>
+		<p class="price-lg"><%= @movie.price %></p>
+		<p><strong>Description: </strong><%= @movie.description %></p>
+		<p class="stars-gold">
+			<span class="glyphicon glyphicon-star"></span>
+			<span class="glyphicon glyphicon-star"></span>
+			<span class="glyphicon glyphicon-star"></span>
+			<span class="glyphicon glyphicon-star"></span>
+			<span class="glyphicon glyphicon-star"></span>
+		</p>
+		<a href="#" class="cart-button">Add to Cart</a>
+	</div>
+</div>
