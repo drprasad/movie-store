@@ -1,0 +1,27 @@
+.navbar-own {
+	font-weight: bold;
+	margin: 20px auto;
+
+	.navbar-header {
+		span img {
+			width: 40px;
+		}
+		span a {
+			vertical-align: middle;
+    		color: #DDDDDD;
+    		font-size: 24px;
+			text-decoration: none;
+		}
+	}
+
+	.navbar-right {
+		li a {
+			color: #DDDDDD;
+		}
+		li a:hover {
+			color: #FFFFFF;
+			background-color: transparent;
+		}
+	}
+
+}
