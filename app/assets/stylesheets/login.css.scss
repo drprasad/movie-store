@@ -24,3 +24,42 @@
 .login-button:hover {
 	background-color: rgb(157, 102, 12);
 }
+
+
+input[type=checkbox]:not(old) {
+  width     : 2em;
+  margin    : 0;
+  padding   : 0;
+  font-size : 1em;
+  opacity   : 0;
+}
+
+input[type=checkbox]:not(old) + label {
+  display      : inline-block;
+  margin-left  : -2em;
+  line-height  : 1.5em;
+}
+
+input[type=checkbox]:not(old) + label > span {
+  display          : inline-block;
+  width            : 1.075em;
+  height           : 1.075em;
+  margin           : 0.25em 0.5em 0.25em 0em; 
+  border           : 0.0625em solid rgb(177,152,32);
+  border-radius    : 0.25em;
+  background       : rgb(177,152,32);
+  vertical-align   : bottom;
+}
+
+
+input[type=checkbox]:not(old):checked + label > span:before{
+  content     : '✓';
+  display     : block;
+  width       : 1em;
+  color       : rgb(255,255,255);
+  font-size   : 0.875em;
+  line-height : 1em;
+  text-align  : center;
+  text-shadow : 0 0 0.0714em rgb(255,255,255);
+  font-weight : bold;
+}
