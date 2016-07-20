@@ -1,0 +1,27 @@
+.container-signup {
+	color: #FFFFFF;
+	width: 40%;
+	margin: 0 auto !important;
+}
+
+.text-white {
+	font-weight: bold;
+}
+
+.signup-button {
+	display: inline-block;
+    background-color: rgb(177, 122, 32);
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border: none;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+}
+
+.signup-button:hover {
+	background-color: rgb(157, 102, 12);
+}
